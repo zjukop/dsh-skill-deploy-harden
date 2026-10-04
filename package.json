@@ -1,0 +1,46 @@
+{
+  "name": "dsh-skill-deploy-harden",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness skill — deploy an AI/web service to a cloud VM and harden it: never expose an unauthenticated web shell, unify tokens behind one gateway, redact secrets in logs, guard destructive commands with an audit trail, and circuit-break token cost + disk usage. Pure guidance + checklists, zero runtime code.",
+  "license": "MIT",
+  "author": "zjukop",
+  "homepage": "https://github.com/zjukop/dsh-skill-deploy-harden",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zjukop/dsh-skill-deploy-harden.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zjukop/dsh-skill-deploy-harden/issues"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh-skill",
+    "dsh",
+    "skill",
+    "deploy",
+    "security",
+    "hardening",
+    "self-host",
+    "gateway",
+    "devsecops",
+    "agent-safety",
+    "audit"
+  ],
+  "files": [
+    "SKILL.md",
+    "README.md",
+    "LICENSE",
+    "bin/install.js"
+  ],
+  "bin": {
+    "dsh-skill-deploy-harden": "bin/install.js"
+  },
+  "dsh": {
+    "kind": "skill",
+    "skill": "SKILL.md",
+    "name": "deploy-harden"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
